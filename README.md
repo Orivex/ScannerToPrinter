@@ -24,7 +24,7 @@ If you use the WSL, you will have to write something similar like: C:\\Windows\\
 
 ## Working directory path
 
-This will look similar to that path: C:\\Users\\Abdlhamid Bilal\\Documents\\Informatik\\IdeaProjects\\ScannerToPrinter\\src
+This will look similar to that path: C:\\Users\\Name\\Documents\\Informatik\\IdeaProjects\\ScannerToPrinter\\src
 
 ## NAPS2 Path
 
@@ -32,7 +32,7 @@ This will look similar to that path: C:\\Program Files\\NAPS2\\NAPS2.Console.exe
 
 ## SumatraPDF Path
 
-This will look similar to that path: C:\\Users\\Abdlhamid Bilal\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe
+This will look similar to that path: C:\\Users\\Name\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe
 
 ### Note: The double slashes are important!
 
