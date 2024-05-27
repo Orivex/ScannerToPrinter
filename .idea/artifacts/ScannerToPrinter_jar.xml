@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ScannerToPrinter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ScannerToPrinter_jar</output-path>
+    <root id="archive" name="ScannerToPrinter.jar">
+      <element id="module-output" name="ScannerToPrinter" />
+    </root>
+  </artifact>
+</component>
