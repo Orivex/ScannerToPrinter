@@ -81,7 +81,7 @@ public class Main {
         panel.add(scannerNameInputField);
         panel.add(new JLabel("Printer Name:"));
         panel.add(printerNameInputField);
-        panel.add(new JLabel("Scan Number:"));
+        panel.add(new JLabel("Scans:"));
         panel.add(scanNumberInputField);
         panel.add(new JLabel(""));
         panel.add(saveSettingsButton);
