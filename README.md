@@ -27,7 +27,7 @@ This will look similar to that path: C:\\Program Files\\NAPS2\\NAPS2.Console.exe
 
 This will look similar to that path: C:\\Users\\Abdlhamid Bilal\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe
 
-### Note: The double slashes (\\) are important!
+### Note: The double slashes ("\\") are important!
 
 # Step 3
 
@@ -38,7 +38,7 @@ Exactly write them into the textfield
 
 Select the right driver
 
-Type the number of scans you want (NOT COPIES!)
+Type the number of scans you want (NOT COPIES!), The scanner will continuously carry on scanning
 
 # Save settings!
 
