@@ -4,11 +4,18 @@ Scan a document on any scanner and print it on any printer
 
 # Step 1
 
-## Download the PROGRAM.zip
-## Download SumatraPDF
-## Download NAPS2
+## Download the PROGRAM.zip and extract it
+## Download SumatraPDF: https://www.sumatrapdfreader.org/free-pdf-reader
+## Download NAPS2: https://www.naps2.com/
 
 # Step 2
+
+Double click on the .jar file. If that doesnt work:
+-Open the current directory in the terminal
+-Write: java -jar ScannerToPrinter.jar
+-Execute
+
+# Step 3
 
 ## Bash path
 For Windows:
@@ -29,7 +36,7 @@ This will look similar to that path: C:\\Users\\Abdlhamid Bilal\\AppData\\Local\
 
 ### Note: The double slashes are important!
 
-# Step 3
+# Step 4
 
 Search for valid scanners in "foundScanners.txt" (For each driver)
 Search for valid scanners in "foundPrinters.txt"
@@ -39,6 +46,8 @@ Exactly write them into the textfield
 Select the right driver
 
 Type the number of scans you want (NOT COPIES!), The scanner will continuously carry on scanning
+
+START
 
 # Save settings!
 
