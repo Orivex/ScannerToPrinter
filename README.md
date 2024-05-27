@@ -27,7 +27,7 @@ This will look similar to that path: C:\\Program Files\\NAPS2\\NAPS2.Console.exe
 
 This will look similar to that path: C:\\Users\\Abdlhamid Bilal\\AppData\\Local\\SumatraPDF\\SumatraPDF.exe
 
-### Note: The double slashes ("\\") are important!
+### Note: The double slashes are important!
 
 # Step 3
 
