@@ -10,16 +10,16 @@ Scan a document on any scanner and print it on any printer
 
 # Step 2
 
-Double click on the .jar file. If that doesnt work:
--Open the current directory in the terminal
--Write: java -jar ScannerToPrinter.jar
+Double click on the .jar file. If that doesnt work: <br />
+-Open the current directory in the terminal <br />
+-Write: java -jar ScannerToPrinter.jar <br />
 -Execute
 
 # Step 3
 
 ## Bash path
-For Windows:
-If you use GitBash, you will have to write something similar like: C:\\Program Files\\Git\\bin\\bash.exe
+For Windows: <br />
+If you use GitBash, you will have to write something similar like: C:\\Program Files\\Git\\bin\\bash.exe <br />
 If you use the WSL, you will have to write something similar like: C:\\Windows\\System32\\wsl.exe
 
 ## Working directory path
@@ -38,14 +38,14 @@ This will look similar to that path: C:\\Users\\Name\\AppData\\Local\\SumatraPDF
 
 # Step 4
 
-Search for valid scanners in "foundScanners.txt" (For each driver)
-Search for valid scanners in "foundPrinters.txt"
+Search for valid scanners in "foundScanners.txt" (For each driver) <br /> <br />
+Search for valid scanners in "foundPrinters.txt" <br />
 
-Exactly write them into the textfield
+Exactly write them into the textfield <br />
 
-Select the right driver
+Select the right driver <br />
 
-Type the number of scans you want (NOT COPIES!), The scanner will continuously carry on scanning
+Type the number of scans you want (NOT COPIES!), The scanner will continuously carry on scanning <br />
 
 START
 
