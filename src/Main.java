@@ -29,7 +29,7 @@ public class Main {
         JTextField sumatraPathInputField = new JTextField(savedSettings.get(3));
         JTextField scannerNameInputField = new JTextField(savedSettings.get(5));
         JTextField printerNameInputField = new JTextField(savedSettings.get(6));
-        JTextField copyNumberInputField = new JTextField(savedSettings.get(7));
+        JTextField scanNumberInputField = new JTextField(savedSettings.get(7));
 
         String[] options = {"wia", "twain", "escl"};
         JComboBox<String> driverOptions = new JComboBox<>(options);
@@ -49,7 +49,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    saveSettings(bashPathInputField.getText(), dirPathInputField.getText(), naps2PathInputField.getText(), sumatraPathInputField.getText(), driverOptions.getSelectedItem().toString(), scannerNameInputField.getText(), printerNameInputField.getText(), copyNumberInputField.getText());
+                    saveSettings(bashPathInputField.getText(), dirPathInputField.getText(), naps2PathInputField.getText(), sumatraPathInputField.getText(), driverOptions.getSelectedItem().toString(), scannerNameInputField.getText(), printerNameInputField.getText(), scanNumberInputField.getText());
                 } catch (IOException ex) {
                     throw new RuntimeException(ex);
                 }
@@ -60,7 +60,7 @@ public class Main {
         startButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                start(scannerNameInputField.getText(), printerNameInputField.getText(), driverOptions.getSelectedItem().toString(), copyNumberInputField.getText(), bashPathInputField.getText(), dirPathInputField.getText(), naps2PathInputField.getText(), sumatraPathInputField.getText());
+                start(scannerNameInputField.getText(), printerNameInputField.getText(), driverOptions.getSelectedItem().toString(), scanNumberInputField.getText(), bashPathInputField.getText(), dirPathInputField.getText(), naps2PathInputField.getText(), sumatraPathInputField.getText());
             }
         });
 
@@ -81,8 +81,8 @@ public class Main {
         panel.add(scannerNameInputField);
         panel.add(new JLabel("Printer Name:"));
         panel.add(printerNameInputField);
-        panel.add(new JLabel("Copy Number:"));
-        panel.add(copyNumberInputField);
+        panel.add(new JLabel("Scan Number:"));
+        panel.add(scanNumberInputField);
         panel.add(new JLabel(""));
         panel.add(saveSettingsButton);
         panel.add(new JLabel(""));
@@ -111,7 +111,7 @@ public class Main {
         return parameters;
     }
 
-    static void saveSettings(String bashPath, String dirPath, String naps2Path, String sumatraPath, String driver, String scanner, String printer, String copies) throws IOException {
+    static void saveSettings(String bashPath, String dirPath, String naps2Path, String sumatraPath, String driver, String scanner, String printer, String scans) throws IOException {
         File file = new File(System.getProperty("user.dir") + "/savedSettings.txt");
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
@@ -129,7 +129,7 @@ public class Main {
         writer.write("\n");
         writer.write(printer);
         writer.write("\n");
-        writer.write(copies);
+        writer.write(scans);
 
         writer.close();
     }
@@ -179,7 +179,7 @@ public class Main {
     }
 
 
-    static void start(String scannerName, String printerName, String driverName, String copyNumber, String bashPath, String dirPath, String naps2Path, String sumatraPath) {
+    static void start(String scannerName, String printerName, String driverName, String scans, String bashPath, String dirPath, String naps2Path, String sumatraPath) {
         try {
             String[] command = {
                     bashPath,
@@ -187,7 +187,7 @@ public class Main {
                     scannerName,
                     printerName,
                     driverName,
-                    copyNumber,
+                    scans,
                     dirPath,
                     naps2Path,
                     sumatraPath
