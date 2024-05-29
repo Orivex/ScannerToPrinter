@@ -195,11 +195,19 @@ public class Main {
 
             ProcessBuilder processBuilder = new ProcessBuilder(command);
 
+            processBuilder.redirectErrorStream(true);  // Combine stdout and stderr
             Process process = processBuilder.start();
+
+            // Read and print the output from the command
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+            }
 
             int exitCode = process.waitFor();
             System.out.println("Exit code: " + exitCode);
-
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
