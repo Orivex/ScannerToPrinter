@@ -19,17 +19,17 @@ public class Main {
         List<String> savedSettings = getSavedSettings();
 
         if(savedSettings.isEmpty()) {
-            saveSettings(" ", " ", " ", " ", " ", " ", " ", " ");
+            saveSettings("-", "-", "-", "-", "-", "-", "-", "-");
             savedSettings = getSavedSettings();
         }
 
-        JTextField bashPathInputField = new JTextField(savedSettings.get(0));
-        JTextField dirPathInputField = new JTextField(savedSettings.get(1));
-        JTextField naps2PathInputField = new JTextField(savedSettings.get(2));
-        JTextField sumatraPathInputField = new JTextField(savedSettings.get(3));
-        JTextField scannerNameInputField = new JTextField(savedSettings.get(5));
-        JTextField printerNameInputField = new JTextField(savedSettings.get(6));
-        JTextField scanNumberInputField = new JTextField(savedSettings.get(7));
+        JTextField bashPathInputField = new JTextField(savedSettings.get(0) == null ? "": savedSettings.get(0));
+        JTextField dirPathInputField = new JTextField(savedSettings.get(1) == null ? "": savedSettings.get(1));
+        JTextField naps2PathInputField = new JTextField(savedSettings.get(2) == null ? "": savedSettings.get(2));
+        JTextField sumatraPathInputField = new JTextField(savedSettings.get(3) == null ? "": savedSettings.get(3));
+        JTextField scannerNameInputField = new JTextField(savedSettings.get(5) == null ? "": savedSettings.get(5));
+        JTextField printerNameInputField = new JTextField(savedSettings.get(6) == null ? "": savedSettings.get(6));
+        JTextField scanNumberInputField = new JTextField(savedSettings.get(7) == null ? "": savedSettings.get(7));
 
         String[] options = {"wia", "twain", "escl"};
         JComboBox<String> driverOptions = new JComboBox<>(options);

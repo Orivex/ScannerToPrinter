@@ -10,6 +10,6 @@ SUMATRAPDF_PATH=$7
 
 for i in $(seq 1 "$SCANS"); do
     "$NAPS2_PATH" -o "/$DIR_PATH/scan.jpg" --driver "$DRIVER_NAME" --device "$SCANNER_NAME" --force
-     sleep 4
     "$SUMATRAPDF_PATH" -print-to "$PRINTER_NAME" "/$DIR_PATH/scan.jpg"
+     sleep 6
 done
