@@ -1,7 +1,5 @@
 # ScannerToPrinter
 
-# !!!The program still has bugs that I will fix soon!!!
-
 Scan a document on any scanner and print it on any printer
 
 # Step 1
